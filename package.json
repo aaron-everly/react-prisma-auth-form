@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm-run-all --parallel && npm install && npm run frontend-setup && npm run backend-setup",
+    "frontend-setup": "cd frontend && npm install",
+    "backend-setup": "cd backend && npm install && npx prisma generate && npx prisma migrate dev",
+    "frontend-dev": "cd frontend && npm run dev",
+    "backend-dev": "cd backend && npm run dev",
+    "dev": "npm-run-all --parallel frontend-dev backend-dev"
+  },
+  "keywords": [],
+  "author": "aaron-everly",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
