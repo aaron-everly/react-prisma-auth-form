@@ -33,6 +33,7 @@ Before running the project, ensure you have the following dependencies installed
 
 - npm version 9.5.0 or later
 - npx version 9.5.0 or later
+- Postgres 15 or later
 
 ## Getting Started
 
@@ -51,8 +52,9 @@ cd react-prisma-auth-form
 ```
 
 ## Setup and usage
+1. Ensure that you have postgres running on your local machine.
 
-1. Add your own `DATABASE_URL`, `SECRET_KEY`, and `PORT` to the `.env` file in `/backend` directory
+2. Add your own `DATABASE_URL`, `SECRET_KEY`, and `PORT` to the `.env` file in `/backend` directory
 
 ```javascript
 // .env
