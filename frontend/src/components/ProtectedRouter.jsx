@@ -24,6 +24,7 @@ const ProtectedRouter = ({ user, setUser }) => {
           <Route path="/" element={<RegisterForm user={user} setUser={setUser} />} />
           <Route exact path="/login" element={<LoginForm user={user} setUser={setUser} />} />
           <Route exact path="/home" element={<Home user={user} setUser={setUser} />} />
+          <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </Router>
     )
