@@ -15,17 +15,17 @@ A simple React login/register form that allows you to create users and store the
 
 ## Introduction
 
-This project features a React-based register/login form styled with TailwindCSS. The backend uses Prisma to interact with the Postgres database and is served with Express. The application utilizes token-based authentication using JSON Web Tokens (JWT), which are stored in the browser's localStorage to provide persistent user information across components. For now, this project cannot be built and is solely to be used in development. 
+This project features a React-based register/login form styled with TailwindCSS. The backend uses Prisma to interact with the Postgres database and is served with Express. The application utilizes token-based authentication using JSON Web Tokens (JWT), which are stored in the browser's localStorage to provide persistent user information across components. For now, this project is solely to be used in development and has no build scripts. 
 
 ## Features
 
 - User registration with encrypted password storage in the database.
 - User login with JWT-based authentication and token storage in localStorage.
 - Protected routes based on presence of token (`http://localhost:5713/home` is currently the only protected route). 
-- React components for a user-friendly register/login interface.
+- React + TailwindCSS for a user-friendly register/login interface.
 - Backend API routes using Express for handling user authentication.
 - Integration with PostgreSQL for persistent user data storage.
-- Prisma ORM for efficient database management and queries.
+- Prisma ORM for database management and queries.
 
 ## Dependencies
 
