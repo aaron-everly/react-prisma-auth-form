@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Navigate, Route } from "react-router-d
 import { Home } from "./Home";
 import { RegisterForm } from './RegisterForm';
 import { LoginForm } from './LoginForm';
+
 const ProtectedRouter = ({ user, setUser }) => {
   const token = user !== null ? JSON.parse(user).token : false;
 
