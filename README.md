@@ -121,6 +121,7 @@ git push origin description
 
 A lot could be done with what is here. A few thing I would like to add include:
 
+- Tests (add jest or similar)
 - Authenticating the token on the sever and rendering some data accordingly. 
 - Improve handling around the session by having functionality that detects when the token expires and prompts a new login.
 - Improve `ProtectedRouter` logic
