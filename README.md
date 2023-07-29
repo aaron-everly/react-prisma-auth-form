@@ -119,10 +119,11 @@ git push origin description
 
 ## To-dos
 
-A lot could be done with what is here. A few thing I would like to add include:
+A few thing I would like to add include:
 
 - Tests (add jest or similar)
-- Authenticating the token on the sever and rendering some data accordingly. 
+- Authenticating the token on the sever and rendering some data accordingly.
+- Build out backend to split app.js into routes and controllers
 - Improve handling around the session by having functionality that detects when the token expires and prompts a new login.
 - Improve `ProtectedRouter` logic
 - Some navigation elements on the home page
